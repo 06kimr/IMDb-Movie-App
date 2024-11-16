@@ -30,7 +30,7 @@ export default class Movie extends Component {
         <span>${movie.Country}</span>
 
       </div>
-      <div class="plot">{movie.Plot}</div>
+      <div class="plot">${movie.Plot}</div>
       <div>
         <h3>Ratings</h3>
         ${movie.Ratings.map((rating) => {

@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"8StHb":[function(require,module,exports,__globalThis) {
+})({"h4jLA":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -970,7 +970,16 @@ const searchMovies = async (page)=>{
         store.state.message = "";
     }
     try {
-        const res = await fetch(`https://www.omdbapi.com?apikey=eb988ef8&s=${store.state.searchText}&page=${page}`);
+        // const res = await fetch(
+        //   `https://www.omdbapi.com?apikey=eb988ef8&s=${store.state.searchText}&page=${page}`
+        // );
+        const res = await fetch("/api/movie", {
+            method: "POST",
+            body: JSON.stringify({
+                title: store.state.searchText,
+                page
+            })
+        });
         const { Search, totalResults, Response, Error } = await res.json();
         if (Response === "True") {
             store.state.movies = [
@@ -990,7 +999,12 @@ const searchMovies = async (page)=>{
 };
 const getMovieDetails = async (id)=>{
     try {
-        const res = await fetch(`https://www.omdbapi.com?apikey=eb988ef8&i=${id}&plot=full`);
+        const res = await fetch("/api/movie", {
+            method: "POST",
+            body: JSON.stringify({
+                id
+            })
+        });
         store.state.movie = await res.json();
     } catch (error) {
         console.log("getMovieDetails error :", error);
@@ -1129,7 +1143,7 @@ class Movie extends (0, _utils.Component) {
         <span>${movie.Country}</span>
 
       </div>
-      <div class="plot">{movie.Plot}</div>
+      <div class="plot">${movie.Plot}</div>
       <div>
         <h3>Ratings</h3>
         ${movie.Ratings.map((rating)=>{
@@ -1199,6 +1213,6 @@ class NotFound extends (0, _utils.Component) {
 }
 exports.default = NotFound;
 
-},{"../core/utils":"jJ0ly","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["8StHb","gLLPy"], "gLLPy", "parcelRequire94c2")
+},{"../core/utils":"jJ0ly","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["h4jLA","gLLPy"], "gLLPy", "parcelRequire94c2")
 
 //# sourceMappingURL=index.4d6bcbeb.js.map
