@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"h4jLA":[function(require,module,exports,__globalThis) {
+})({"8StHb":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -612,7 +612,7 @@ class App extends (0, _utils.Component) {
 }
 exports.default = App;
 
-},{"./core/utils":"jJ0ly","./components/TheHeader":"3Cyq4","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./components/TheFooter":"b3x3c"}],"jJ0ly":[function(require,module,exports,__globalThis) {
+},{"./core/utils":"jJ0ly","./components/TheHeader":"3Cyq4","./components/TheFooter":"b3x3c","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jJ0ly":[function(require,module,exports,__globalThis) {
 //Component
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -825,7 +825,7 @@ class TheFooter extends (0, _utils.Component) {
 }
 exports.default = TheFooter;
 
-},{"../core/utils":"jJ0ly","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../store/about":"4RAJO"}],"4RAJO":[function(require,module,exports,__globalThis) {
+},{"../core/utils":"jJ0ly","../store/about":"4RAJO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4RAJO":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utils = require("../core/utils");
@@ -870,7 +870,7 @@ exports.default = (0, _utils.createRouter)([
     }
 ]);
 
-},{"../core/utils":"jJ0ly","./Home":"0JSNG","./Movie":"1LTyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./About":"gdB30","./NotFound":"4fDiL"}],"0JSNG":[function(require,module,exports,__globalThis) {
+},{"../core/utils":"jJ0ly","./Home":"0JSNG","./Movie":"1LTyN","./About":"gdB30","./NotFound":"4fDiL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"0JSNG":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utils = require("../core/utils");
@@ -1184,7 +1184,7 @@ class About extends (0, _utils.Component) {
 }
 exports.default = About;
 
-},{"../core/utils":"jJ0ly","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../store/about":"4RAJO"}],"4fDiL":[function(require,module,exports,__globalThis) {
+},{"../core/utils":"jJ0ly","../store/about":"4RAJO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4fDiL":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utils = require("../core/utils");
@@ -1199,6 +1199,6 @@ class NotFound extends (0, _utils.Component) {
 }
 exports.default = NotFound;
 
-},{"../core/utils":"jJ0ly","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["h4jLA","gLLPy"], "gLLPy", "parcelRequire94c2")
+},{"../core/utils":"jJ0ly","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["8StHb","gLLPy"], "gLLPy", "parcelRequire94c2")
 
 //# sourceMappingURL=index.4d6bcbeb.js.map
