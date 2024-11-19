@@ -6,13 +6,18 @@
     "build": "parcel build ./index.html",
     "vercel": "vercel dev"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/node-fetch": "^2.6.12",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
     "dotenv": "^16.4.5",
+    "eslint": "^9.15.0",
     "parcel": "^2.13.0",
+    "typescript": "^5.6.3",
     "vercel": "^39.0.2"
   },
   "dependencies": {
